@@ -9,3 +9,9 @@ A published postman collection of the available endpoints can be found here:
 https://documenter.getpostman.com/view/11384363/2sAXxS6qfY
 
 The frontend repo is here:
+
+### Tools used:
+
+- Nest JS
+- Mongoose/Mongodb
+- Paystack APIs
