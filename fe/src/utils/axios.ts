@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://paystack-side-be-0cdbe122bc32.herokuapp.com",
 });
 
 axiosInstance.interceptors.request.use(

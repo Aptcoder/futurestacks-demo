@@ -7,9 +7,11 @@ import { TransactionModule } from './transaction/transaction.module';
 import { PaystackModule } from './common/paystack/module';
 import { WebhookModule } from './webhook/webhook.module';
 import { LoggerModule } from 'nestjs-pino';
+import * as config from 'config';
+
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/paystack-side'),
+    MongooseModule.forRoot(config.get('database_url')),
     LoggerModule.forRoot({
       pinoHttp: {
         transport: {

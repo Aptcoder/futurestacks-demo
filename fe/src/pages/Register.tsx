@@ -66,13 +66,16 @@ export default function Register() {
       onSubmit={async (values, { setSubmitting }) => {
         try {
           setSubmitting(true);
-          const response = await axios.post("http://localhost:3000/users/", {
-            email: values.email,
-            password: values.password,
-            firstName: values.firstName,
-            lastName: values.lastName,
-            role: values.role,
-          });
+          const response = await axios.post(
+            "https://paystack-side-be-0cdbe122bc32.herokuapp.com/users/",
+            {
+              email: values.email,
+              password: values.password,
+              firstName: values.firstName,
+              lastName: values.lastName,
+              role: values.role,
+            }
+          );
 
           toast({
             title: "Sign up successful",

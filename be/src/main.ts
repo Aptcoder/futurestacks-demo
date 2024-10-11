@@ -3,6 +3,7 @@ import { AppModule } from './app.module';
 import { GlobalExceptionsFilter } from './common/exceptions/http-filter.exception';
 import { ValidationPipe } from '@nestjs/common';
 import { Logger } from 'nestjs-pino';
+import * as config from 'config';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -12,6 +13,6 @@ async function bootstrap() {
 
   app.enableCors();
   app.useLogger(app.get(Logger));
-  await app.listen(3000);
+  await app.listen(config.get('port') || 3000);
 }
 bootstrap();
