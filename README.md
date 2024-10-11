@@ -1,10 +1,10 @@
 # Future stacks demo project 
 
-[Backend subdirectory](https://github.com/Aptcoder/futurestacks-demo/tree/main/be)
+[Backend subdirectory and related links](https://github.com/Aptcoder/futurestacks-demo/tree/main/be)
 
-[Frontend subdirectory](https://github.com/Aptcoder/futurestacks-demo/tree/main/fe)
+[Frontend subdirectory and related links](https://github.com/Aptcoder/futurestacks-demo/tree/main/fe)
 
 ## Project description
 
-An open space for customers and riders to schedule and book deliveries. Supports wallet payment and split payments for riders.
+An open space for customers and riders to schedule and book deliveries. Supports wallet payments and next-day direct payments for riders.
 
